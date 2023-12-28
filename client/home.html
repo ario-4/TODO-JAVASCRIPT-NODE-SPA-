@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="public/css/app.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task manager app</title>
+  </head>
+  <body>
+    <div class="contaner">
+      <h1>Task manager app</h1>
+      <div class="part-1">
+        <div class="form">
+          <div class="input">
+            <input
+              type="text"
+              class="text-input"
+              name="title"
+              placeholder="Entre a new title"
+            />
+            <button class="button" type="button">add new task</button>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="checkbox" name="completed" />
+            <p>the task is complated</p>
+          </div>
+        </div>
+      </div>
+      
+        <div class="radio-box">
+          <h3>status:</h3>
+          <input type="radio" class="radio" id="all-radio" checked />
+          <h3>all</h3>
+          <input type="radio" class="radio" id="completed-radio" />
+          <h3>completed</h3>
+          <input type="radio" class="radio" id="inprogress-radio" />
+          <h3>in progress</h3>
+        </div>
+      
+
+      <h2 class="h2 d-non">there is not any task</h2>
+      <div class="part-2"></div>
+      <div class="part-3 d-none">
+        <button class="btn-prev-next" id="prev-button">&leftarrow;</button>
+        <label id="page-lable">page 1 of 1</label>
+        <button class="btn-prev-next" id="next-button">&rightarrow;</button>
+      </div>
+    </div>
+    <script src="public/js/axios.min.js"></script>
+    <script src="public/js/script.js"></script>
+    <!--  https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js -->
+  </body>
+</html>
